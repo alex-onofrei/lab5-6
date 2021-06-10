@@ -1,0 +1,320 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <title>Module 5 - Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/service.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+<body>
+
+	<div class = "container-lg">
+
+	    <nav class="navbar bg-dark text-white p-3 my-3 ">
+	        <h1><img src="images/company_logo.png" width="130" height="130">STRIVE Physiotherapy, Sports Therapy and Massotherapy</h1>
+	    </nav>
+
+		    	<!-- Grey with black text -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <ul class="navbar-nav">
+		    <li class="nav-item active">
+		      <a class="nav-link active" href="#about_us"><i class="fas fa-info-circle"></i> About Us</a>
+		    </li>
+		    <li class="nav-item"> 
+		      <a class="nav-link" href="#our_services"> <i class="fas fa-spa"></i> Our Services</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#our_experts"> <i class="fas fa-user-tie"></i> Our Experts</a>
+		    </li>
+		  </ul>
+		</nav>
+
+		<a id="about_us"> 
+			<div class= "p-3 my-3 border bg-light">
+				<div class="row">
+					<div class="col">
+				        <h1> About us</h1>
+				        <p class="p-4 my-3" style="font-size: 25px">Our Locations: </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Gatineau: 400 rue Saint-Lous, J8J 4E1 <br>
+				                                                     Ottawa: 2322 Main Street, J7G 4H1 </p>
+			        </div>
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px">Contact Us: </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Gatineau: 819-829-0978 <br>
+				                                                     Ottawa: 613-829-0978 </p>
+			        </div>
+
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px"> Clinic Hours: </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Gatineau: <br> Monday to Friday - 7am to 8pm, Weekends - 10am to 6pm <br><br> Ottawa: <br>Monday to Friday - 7am to 9pm, Weekends - 9am to 6pm </p>
+			        </div>
+
+		        </div>
+		    </div>
+		</a>
+
+		<a id="our_services"> 
+			<div class= "p-3 my-3 border bg-light">
+				<div class="row">
+					<h1> Our Services </h1> <br><hr><br>
+					<div class="col">
+				        <h3> Our Massages</h3>
+				        <p class="p-4 my-3" style="font-size: 25px">Nordic Massage </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: <br> 30 Minutes: 40$ <br> 45 minutes: 55$ <br> 60 minutes: 75$ </p>
+					    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+					        Select Service
+					    </button>
+			        </div>
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px">Scandinavian Massage </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: <br> 30 Minutes: 50$ <br> 45 minutes: 65$ <br> 60 minutes: 85$ </p>
+					    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px">Rehabilitation Massage </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: <br> 30 Minutes: 60$ <br> 45 minutes: 75$ <br> 60 minutes: 95$ </p>
+				        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+		        </div>
+		        <div> <br><br> </div>
+		        <div class ="row" align="center">
+		        	 <a>
+			        	<img src="images/massage.png" width="500" height="300">
+			        </a>
+		        </div>
+		        <hr>
+		        <div class="row">
+					<div class="col">
+				        <h3> Our Threatments</h3>
+				        <p class="p-4 my-3" style="font-size: 25px"> Neurologic Threatment</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: <br> 30 Minutes: 23$ <br> 45 minutes: 35$ <br>  minutes: 52$ </p>
+				        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px"> Back Pains </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: <br> 30 Minutes: 28$ <br> 45 minutes: 41$ <br> 60 minutes: 62$ </p>
+				        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px">Respiratory Threatments </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: <br> 30 Minutes: 67$ <br> 45 minutes: 95$ <br> 60 minutes: 115$ </p>
+				        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+		        </div>
+		        <div> <br><br> </div>
+		        <div class ="row" align="center">
+		        	 <a>
+			        	<img src="images/threatments.png" width="500" height="300">
+			        </a>
+		        </div>
+		        <hr>
+				<div class="row">
+					<div class="col">
+				        <h3> Tests</h3>
+				        <p class="p-4 my-3" style="font-size: 25px"> Running Test</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: 125$</p>
+				        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px"> Flexibility Test </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Prices: 145$</p>
+				        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px"> Reflex Test </p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Price: 130$</p>
+				        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:5px">
+    					Select Service
+					    </button>
+			        </div>
+		        </div>
+		        <div> <br><br> </div>
+		        <div class ="row" align="center">
+		        	 <a>
+			        	<img src="images/test.png" width="500" height="300">
+			        </a>
+		        </div>
+		    </div>
+		</a>
+
+		<a id="our_experts"> 
+			<div class= "p-3 my-3 border bg-light">
+				<div class="row">
+					<div class="col">
+				        <h1> Our Experts</h1>
+				        <p class="p-4 my-3" style="font-size: 25px">Jean-Yves Lacroix </p>
+				        <br>
+				        <div align="center">
+					        <a>
+				        		<img src="images/physio1.png" width="200" height="200">
+				        	</a>
+			        	</div>
+				        <br>
+				        <p class="p-4 my-2" style="font-size: 22px"> Studies:</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Bachelor in Physiotherapy: University of Montreal <br> 
+				        											 Masters in Human anatomy: University of Ottawa</p>
+				        <p class="p-4 my-2" style="font-size: 22px"> Interests:</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Water Sports, Running, Cycling</p>
+			        </div>
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px">Michelle Blanchette</p>
+			     		<br>
+				        <div align="center">
+					        <a>
+				        		<img src="images/physio2.png" width="200" height="200">
+				        	</a>
+			        	</div>
+				        <br>
+				        <p class="p-4 my-2" style="font-size: 22px"> Studies:</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Bachelor in Physiotherapy: University of Ottawa <br> 
+				        											 Masters in Human Kinetics: University of Sherbrooke</p>
+				        <p class="p-4 my-2" style="font-size: 22px"> Interests:</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Cycling, Yoga</p>
+			        </div>
+
+			        <div class="col">
+			     		<br> <br>
+			     		<p class="p-4 my-3" style="font-size: 25px"> Paul Guindon </p>
+			     		<br>
+				        <div align="center">
+					        <a>
+				        		<img src="images/physio3.png" width="200" height="200">
+				        	</a>
+			        	</div>
+				        <br>
+				        <p class="p-4 my-2" style="font-size: 22px"> Studies:</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Bachelor in Physiotherapy: University of Laval <br> 
+				        											 Masters in Nutrition: University of Syracuse</p>
+				        <p class="p-4 my-2" style="font-size: 22px"> Interests:</p>
+				        <p class="p-4 my-2" style="font-size: 20px"> Nutrition, Climbing, Running</p>
+			        </div>
+
+		        </div>
+		    </div>
+		</a>
+
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please Enter the Following Information for your Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                	Please Select One of our Experts
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+					  </button>
+					  <ul name="expert_select"class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+					    <li><a class="dropdown-item">Jean-Yves Lacroix</a></li>
+					    <li><a class="dropdown-item">Michelle Blanchette</a></li>
+					    <li><a class="dropdown-item">Paul Guidon</a></li>
+					  </ul>
+					  <br>
+					  <br>
+                    Please Select a Date and Time
+					 <p><input type="text" id="dateInput"></p>
+                    <br>
+                    Please Enter your Information
+                    <div class="form-group">
+					  <label for="usr">First Name:</label>
+					  <input type="text" class="form-control" id="usr">
+					</div>
+					<div class="form-group">
+					  <label for="pwd">Last Name:</label>
+					  <input type="text" class="form-control" id="usr">
+					</div>
+					<div class="form-group">
+					  <label for="pwd">Email Address:</label>
+					  <input type="email" class="form-control" id="usr">
+					</div>
+					<div class="form-group">
+						<label for="pwd">Phone Number:</label>
+						<input placeholder="(XXXX)" type="text" id="phone" class="form-control"> 
+					</div>
+					<br>
+					Please Enter your credit card information
+					<div class="form-group">
+						<label for="usr">Card Number:</label> 
+					  	<input type="text" id="debit">
+					  	<i class="fas fa-info-circle" data-toggle="tooltip" title="We ask for your credit card number in case of no-show, 20$ will be charged."></i>
+					</div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="cancel()" data-bs-dismiss="modal" ><i class="far fa-times-circle"></i></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="saved()"><i class="fas fa-credit-card"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+<script>
+function saved() {
+  alert("You have successfully saved your appointment. Press OK to continue");
+}
+function cancel() {
+  alert("Service Canceled. Press OK to continue");
+}
+</script>
+
+</body>
